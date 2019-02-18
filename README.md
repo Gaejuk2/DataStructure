@@ -1,11 +1,10 @@
 # DataStructure
 ## Conference Information Management Program
 ### Project
-* main
 * Application class
-  + DatStructure
+  + *DatStructure*
 	- RedBlackTree
-  + DataType
+  + *DataType*
 	- ConferenceType
 	- PaperType
 	- AutherType
