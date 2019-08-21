@@ -115,7 +115,7 @@ void PaperType::AuthorManagement()
 		switch (command)
 		{
 		case 1:	// display all of session information
-			system("cls");
+			system("clear");
 			DisplayAllAuthor();
 			break;
 		case 2: // add a session
@@ -128,13 +128,13 @@ void PaperType::AuthorManagement()
 			ReplaceAuthor();
 			break;
 		case 0: // go back
-			system("cls");
+			system("clear");
 			goback = true;
 			break;
 		default: // force program termination
-			system("cls");
+			system("clear");
 			cout << "\n\n\t  ** ERROR : Illegal selection. Shut down the Program";
-			Sleep(1000);
+			sleep(2);
 			exit(400);
 		}
 	}
@@ -147,7 +147,7 @@ void PaperType::AddAuthor()
 	tempSession.SetPaperName(GetName());
 	int addResult = authorList.Insert(tempSession);
 
-	system("cls");
+	system("clear");
 	if (addResult == 1)	// add success
 		DisplayAllAuthor();
 	else if (addResult == 0) // duplication occurred
@@ -182,25 +182,25 @@ void PaperType::DeleteAuthor()
 	if (process && startOrNot) // delete success
 	{
 		authorList.Remove(tempData);
-		system("cls");
+		system("clear");
 		DisplayAllAuthor();
 	}
 	else if (!process) // can not found
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t  ** ERROR : Can not found." << endl;
 	}
 	else if (!startOrNot) // cancel delete
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t  ** Cancel Delete." << endl;
 		DisplayAllAuthor();
 	}
 	else
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t ** ERROR : Unexpected Error occurred. Exit Program." << endl;
-		Sleep(1000);
+		sleep(2);
 		exit(400);
 	}
 }
@@ -231,20 +231,20 @@ void PaperType::ReplaceAuthor()
 	}
 	else if (!process) // can not found
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t  ** ERROR : Can not found." << endl;
 	}
 	else if (!startOrNot) // cancel replace
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t  ** Cancel Replace." << endl;
 		DisplayAllAuthor();
 	}
 	else
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t ** ERROR : Unexpected Error occurred. Exit Program." << endl;
-		Sleep(1000);
+		sleep(2);
 		exit(400);
 	}
 }
@@ -253,8 +253,8 @@ void PaperType::DisplayAllAuthor()
 {
 	if (authorList.GetCount())
 	{
-		system("cls");
-		// TreeÀÇ ¸ðµç µ¥ÀÌÅÍ¸¦ È­¸é¿¡ Ãâ·Â
+		system("clear");
+		// Treeï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ È­ï¿½é¿¡ ï¿½ï¿½ï¿½
 		cout << "\n\t-- Current list ----------------------------\n\n";
 		authorList.DisplayAllRecord();
 		cout << "\t--------------------------------------------" << endl << endl;
@@ -263,7 +263,8 @@ void PaperType::DisplayAllAuthor()
 
 void PaperType::DisplayAllResult(ResultDisplayMode mode)
 {
-	ARL.DisplayAllRecord();
+	if( mode == PAPER )
+		ARL.DisplayAllRecord();
 }
 
 void PaperType::RetrieveByName(string searchName, int &location)

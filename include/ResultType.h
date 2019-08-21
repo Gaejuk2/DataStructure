@@ -23,24 +23,24 @@ public:
 	}
 
 	/*
-	*	@brief	Pointer¸¦ ÃÊ±âÈ­ÇÏ±â À§ÇÑ ÇÔ¼ö
+	*	@brief	initialize pointer
 	*	@pre	None
-	*	@post	Pointer°¡ ÃÊ±âÈ­ µÈ´Ù.
-	*	@param	ÃÊ±âÈ­ÇÒ ÁÖ¼Ú°ªÀ» °¡Áö´Â Æ÷ÀÎÅÍ
+	*	@post	initialized pointer
+	*	@param	Pointer with address to initialize
 	*/
 	void SetPointer(T* inPointer);
 
 	/*
-	*	@brief	template¸¦ ÀÌ¿ëÇÏ±â À§ÇØ GetNameÀÌ¶ó ¸í¸í. Pointer°¡ °¡¸£Å°´Â µ¥ÀÌÅÍÀÇ ÀÌ¸§À» ¹İÈ¯ÇÑ´Ù
-	*	@pre	Pointer°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ßÇÑ´Ù
+	*	@brief	templateï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ GetNameï¿½Ì¶ï¿½ ï¿½ï¿½ï¿½ï¿½. Pointerï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½
+	*	@pre	Pointerï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Ñ´ï¿½
 	*	@post	None
-	*	@return	Pointer°¡ °¡¸£Å°´Â µ¥ÀÌÅÍÀÇ ÀÌ¸§
+	*	@return	Pointerï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½
 	*/
 	string GetName();
 
 	/*
-	*	@brief	Pointer¸¦ ¹İÈ¯ÇÏ´Â ÇÔ¼ö
-	*	@pre	Pointer°¡ ÃÊ±âÈ­µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
+	*	@brief	Pointerï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
+	*	@pre	Pointerï¿½ï¿½ ï¿½Ê±ï¿½È­ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
 	*	@post	None
 	*	@return	Pointer
 	*/
@@ -58,9 +58,9 @@ public:
 	RelationType CompareByName(ResultType & data);
 
 	/*
-	*	@brief	Æ÷ÀÎÅÍ°¡ °¡¸£Å°´Â µ¥ÀÌÅÍÀÇ ÀÌ¸§À» Ãâ·ÂÇÏ´Â ÇÔ¼ö
-	*	@pre	Pointer°¡ ÃÊ±âÈ­µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
-	*	@post	µ¥ÀÌÅÍÀÇ ÀÌ¸§µé È­¸é¿¡ Ãâ·Â
+	*	@brief	ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
+	*	@pre	Pointerï¿½ï¿½ ï¿½Ê±ï¿½È­ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
+	*	@post	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ È­ï¿½é¿¡ ï¿½ï¿½ï¿½
 	*/
 	void DisplayRecordOnScreen();
 

@@ -33,7 +33,7 @@ void AuthorType::SetRecordFromKB()
 
 void AuthorType::DisplayNameOnScreen()
 {
-	cout << "\t   " << m_wName << endl;
+	cout << "\t   " << m_wName;
 }
 
 void AuthorType::DisplayRecordOnScreen()

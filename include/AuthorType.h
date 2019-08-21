@@ -5,8 +5,8 @@
 
 #include <iostream>
 #include <string>
-#include <windows.h>
 #include <fstream>
+#include <unistd.h>
 using namespace std;
 
 /*
@@ -108,7 +108,7 @@ public:
 	RelationType CompareByName(AuthorType &data);
 
 	/*
-	*	@brief	template를 이용하기 위한 dummy 함수로써 실제로 사용되지 않는다.
+	*	@brief	Dummy Function for using template class.
 	*/
 	void RetrieveByName(string dummyString, int &dummyInt);
 

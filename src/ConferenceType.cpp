@@ -106,7 +106,7 @@ void ConferenceType::PaperManagement()
 		switch (command)
 		{
 		case 1:	// display all of session information
-			system("cls");
+			system("clear");
 			DisplayAllPaper();
 			break;
 		case 2: // add a session
@@ -122,13 +122,13 @@ void ConferenceType::PaperManagement()
 			AuthorManagementMode();
 			break;
 		case 0: // go back
-			system("cls");
+			system("clear");
 			goback = true;
 			break;
 		default: // force program termination
-			system("cls");
+			system("clear");
 			cout << "\n\n\t  ** ERROR : Illegal selection. Shut down the Program";
-			Sleep(1000);
+			sleep(2);
 			exit(400);
 		}
 	}
@@ -138,9 +138,9 @@ void ConferenceType::DisplayAllPaper()
 {
 	if (paperList.GetCount())
 	{
-		system("cls");
+		system("clear");
 		
-		// listÀÇ ¸ðµç µ¥ÀÌÅÍ¸¦ È­¸é¿¡ Ãâ·Â
+		// listï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ È­ï¿½é¿¡ ï¿½ï¿½ï¿½
 		cout << "\n\t-- Current list ----------------------------\n\n";
 		paperList.DisplayAllRecord();
 		cout << "\t--------------------------------------------" << endl << endl;
@@ -163,7 +163,7 @@ void ConferenceType::AddPaper()
 
 	bool addResult = paperList.Insert(tempPaper);
 
-	system("cls");
+	system("clear");
 	if (addResult) // add success
 		DisplayAllPaper();
 	else // duplication occurred
@@ -194,25 +194,25 @@ void ConferenceType::DeletePaper()
 	if (process && startOrNot) // delete success
 	{
 		paperList.Remove(tempData);
-		system("cls");
+		system("clear");
 		DisplayAllPaper();
 	}
 	else if (!process) // can not found
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t  ** ERROR : Can not found." << endl;
 	}
 	else if (!startOrNot) // cancel delete
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t  ** Cancel Delete." << endl;
 		DisplayAllPaper();
 	}
 	else
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t ** ERROR : Unexpected Error occurred. Exit Program." << endl;
-		Sleep(1000);
+		sleep(2);
 		exit(400);
 	}
 }
@@ -240,21 +240,21 @@ void ConferenceType::ReplacePaper()
 		}
 		else // cancel replace
 		{
-			system("cls");
+			system("clear");
 			cout << "\n\t  ** Cancel Replace." << endl;
 			DisplayAllPaper();
 		}
 	}
 	else if (!process) // can not found
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t  ** ERROR : Can not found." << endl;
 	}
 	else
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t ** ERROR : Unexpected Error occurred. Exit Program." << endl;
-		Sleep(1000);
+		sleep(2);
 		exit(400);
 	}
 }
@@ -276,19 +276,19 @@ void ConferenceType::AuthorManagementMode()
 	if (process) // retrieve success
 	{
 		PaperType *Pointer = paperList.GetCurDataPointer(tempData);
-		system("cls");
+		system("clear");
 		Pointer->AuthorManagement(); // start paper management mode
 	}
 	else if (!process) // can not found
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t  ** ERROR : Can not found." << endl;
 	}
 	else
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t ** ERROR : Unexpected Error occurred. Exit Program." << endl;
-		Sleep(1000);
+		sleep(2);
 		exit(400);
 	}
 }
@@ -309,20 +309,21 @@ char ConferenceType::FileIn(ifstream & read, PaperType temp)
 	
 	char dataType;
 	read.get(dataType);
-	while (dataType != 'c' && dataType != 'p')
+
+	while (dataType != 'c' && dataType != 'p' && !read.eof())
 	{
-		if (dataType == 'a' && dataType != '\n')
+		if (dataType == 'a')
 		{
 			getline(read, space, '\t');
 			tempPointer = paperList.GetCurDataPointer(temp);
-			AuthorType temp;
+			AuthorType tempAuthor;
 			string tempName;
 			getline(read, tempName, '\t');
-			while (tempName.find("\n") == string::npos)
+			while (tempName.find("\n") == string::npos && !tempName.empty())
 			{
-				temp.SetRecord(tempName);
-				tempPointer->FileIn(temp);
-				getline(read, tempName, '\t');
+				tempAuthor.SetRecord(tempName);
+				tempPointer->FileIn(tempAuthor);
+				getline(read, tempName, '\t');	
 			}
 		}
 		read.get(dataType);

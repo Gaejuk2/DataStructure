@@ -188,14 +188,14 @@ public:
 	*	@pre	None.
 	*	@post	PRL, ARL have data that find by keyword.
 	*	@param	Keyword.
-	*	@param	어떤 단계에서의 검색인지 알 수 있는 int값
+	*	@param	int value that indicates which stage the search is at.
 	*/
 	void RetrieveByName(string searchName, int &location);
 
 	/*
-	*	@brief	파일로 부터 데이터를 불러와서 Tree에 저장한다
-	*	@pre	파일의 데이터 형식을 잘 판별하여 Tree에 저장할 수 있도록 텍스트 파일에 데이터가 일관 되게 저장되어있어야 한다
-	*	@post	Tree에 데이터 저장
+	*	@brief	Import data from a file and save it to a tree.
+	*	@pre	Files should be stored consistently so that they can be stored in a tree by determining the type of data in the file.
+	*	@post	Tree where data is stored.
 	*/
 	char FileIn(ifstream &read, PaperType temp);
 	
