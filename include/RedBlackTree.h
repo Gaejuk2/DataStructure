@@ -32,115 +32,115 @@ public:
 	}
 
 	/*
-	*	@brief	Tree³»ÀÇ µ¥ÀÌÅÍ ¼ö ¹ÝÈ¯
-	*	@pre	m_nCount °ª ÃÊ±âÈ­
+	*	@brief	Treeï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½È¯
+	*	@pre	m_nCount ï¿½ï¿½ ï¿½Ê±ï¿½È­
 	*	@post	None
 	*	@return	m_nCount
 	*/
 	int GetCount() const;
 
 	/*
-	*	@brief	Tree°¡ ºñ¾îÀÖ´ÂÁö bool°ª ¹ÝÈ¯
-	*	@pre	m_nCount°ª ÃÊ±âÈ­
+	*	@brief	Treeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ boolï¿½ï¿½ ï¿½ï¿½È¯
+	*	@pre	m_nCountï¿½ï¿½ ï¿½Ê±ï¿½È­
 	*	@post	None
-	*	@return	ºñ¾îÀÖ´Ù¸é true, ºñ¾îÀÖÁö¾Ê´Ù¸é false ¹ÝÈ¯
+	*	@return	ï¿½ï¿½ï¿½ï¿½Ö´Ù¸ï¿½ true, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê´Ù¸ï¿½ false ï¿½ï¿½È¯
 	*/
 	bool IsEmpty() const;
 
 	/*
-	*	@brief	Tree¸¦ ºñ¿î´Ù.
+	*	@brief	Treeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 	*	@pre	None.
-	*	@post	Tree³»ÀÇ ¸ðµç µ¥ÀÌÅÍ »èÁ¦
+	*	@post	Treeï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	*/
 	void MakeTreeEmpty();
 
 	/*
-	*	@brief	Tree³»¿¡ keyÀÇ dataÀÇ ÀÌ¸§À» keyword·Î °Ë»ö
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
-	*	@post	key¿¡ °Ë»öÇÑ µ¥ÀÌÅÍ º¹»ç
-	*	@return	°Ë»ö¿¡ ¼º°øÇÏ¿´´Ù¸é true, ½ÇÆÐÇÏ¿´´Ù¸é false ¹ÝÈ¯
+	*	@brief	Treeï¿½ï¿½ï¿½ï¿½ keyï¿½ï¿½ dataï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ keywordï¿½ï¿½ ï¿½Ë»ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
+	*	@post	keyï¿½ï¿½ ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	*	@return	ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½Ù¸ï¿½ true, ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½Ù¸ï¿½ false ï¿½ï¿½È¯
 	*/
 	bool Find(TYPE& key);
 
 	/*
-	*	@brief	°Ë»ö¿¡ »ç¿ëÇÒ ÇÔ¼ö
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù.
-	*	@post	°Ë»öÇÑ µ¥ÀÌÅÍÀÇ ÁÖ¼Ú°ªÀ» °¡Áö´Â tree »ý¼º
-	*	@param	°Ë»öÇÒ Å°¿öµå
-	*	@param	°Ë»öÇÑ µ¥ÀÌÅÍÀÇ °á°ú¸¦ ÀúÀåÇÒ Tree
-	*	@param	ÇöÀç °Ë»öÇÏ°í ÀÖ´Â ´Ü°è°¡ ¾îµðÀÎÁö ¾Ë·ÁÁÖ´Â int°ª
+	*	@brief	ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½.
+	*	@post	ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼Ú°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ tree ï¿½ï¿½ï¿½ï¿½
+	*	@param	ï¿½Ë»ï¿½ï¿½ï¿½ Å°ï¿½ï¿½ï¿½ï¿½
+	*	@param	ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Tree
+	*	@param	ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½ï¿½Ï°ï¿½ ï¿½Ö´ï¿½ ï¿½Ü°è°¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë·ï¿½ï¿½Ö´ï¿½ intï¿½ï¿½
 	*/
 	int RetrieveWithKeyword(string searchKeyword, RedBlackTree<ResultType<TYPE>>, int &location);
 
 	/*
-	*	@brief	Tree¿¡ µ¥ÀÌÅÍ¸¦ Ãß°¡ÇÑ´Ù.
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù.
-	*	@post	»õ·Î¿î µ¥ÀÌÅÍ Ãß°¡
-	*	@param	Ãß°¡ÇÒ µ¥ÀÌÅÍ
-	*	@return	Ãß°¡¿¡ ¼º°øÇÏ¿´´Ù¸é true, ½ÇÆÐÇÏ¿´´Ù¸é false ¹ÝÈ¯
+	*	@brief	Treeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ß°ï¿½ï¿½Ñ´ï¿½.
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½.
+	*	@post	ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
+	*	@param	ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	*	@return	ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½Ù¸ï¿½ true, ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½Ù¸ï¿½ false ï¿½ï¿½È¯
 	*/
 	bool Insert(TYPE& value);
 
 	/*
-	*	@brief	Tree¿¡ µ¥ÀÌÅÍ¸¦ »èÁ¦ÇÑ´Ù
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
-	*	@post	µ¥ÀÌÅÍ »èÁ¦
-	*	@param	°Ë»ö¿¡ ÀÌ¿ëÇÒ Å°¿öµå¸¦ Æ÷ÇÔÇÑ µ¥ÀÌÅÍ
-	*	@return	»èÁ¦¿¡ ¼º°øÇÏ¿´´Ù¸é true, ½ÇÆÐÇÏ¿´´Ù¸é false ¹ÝÈ¯
+	*	@brief	Treeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
+	*	@post	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	*	@param	ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ Å°ï¿½ï¿½ï¿½å¸¦ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	*	@return	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½Ù¸ï¿½ true, ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½Ù¸ï¿½ false ï¿½ï¿½È¯
 	*/
 	bool Remove(TYPE& key);
 
 	/*
-	*	@brief	Tree¿¡ µ¥ÀÌÅÍ¸¦ °»½ÅÇÑ´Ù
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
-	*	@post	µ¥ÀÌÅÍ °»½Å
-	*	@param	°Ë»ö¿¡ ÀÌ¿ëÇÒ Å°¿öµå¸¦ Æ÷ÇÔÇÑ µ¥ÀÌÅÍ
-	*	@return	Ãß°¡¿¡ ¼º°øÇÏ¿´´Ù¸é true, ½ÇÆÐÇÏ¿´´Ù¸é false ¹ÝÈ¯
+	*	@brief	Treeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
+	*	@post	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	*	@param	ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ Å°ï¿½ï¿½ï¿½å¸¦ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	*	@return	ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½Ù¸ï¿½ true, ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½Ù¸ï¿½ false ï¿½ï¿½È¯
 	*/
 	bool Replace(TYPE& key);
 
 	/*
-	*	@brief	Tree³»ÀÇ ¸ðµç µ¥ÀÌÅÍ Ãâ·ÂÇÑ´Ù
+	*	@brief	Treeï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½
 	*	@pre	None
-	*	@post	µ¥ÀÌÅÍ È­¸é¿¡ Ãâ·Â
+	*	@post	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È­ï¿½é¿¡ ï¿½ï¿½ï¿½
 	*/
 	void DisplayAllRecord();
 
 	/*
-	*	@brief	Tree³»ÀÇ µ¥ÀÌÅÍÀÇ ÀÌ¸§µéÀ» Ãâ·ÂÇÑ´Ù
+	*	@brief	Treeï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½
 	*	@pre	None
-	*	@post	µ¥ÀÌÅÍµéÀÇ ÀÌ¸§ È­¸é¿¡ Ãâ·Â
+	*	@post	ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ È­ï¿½é¿¡ ï¿½ï¿½ï¿½
 	*/
 	void DisplayAllName();
 
 	/*
-	*	@brief	°Ë»ö°á°ú¸¦ Ãâ·ÂÇÏ±â À§ÇÑ ÇÔ¼ö·Î, ResultTypeÀ¸·Î ÀÌ·ç¾îÁø Tree³»ÀÇ µ¥ÀÌÅÍÀÇ ÀÌ¸§µéÀ» Ãâ·ÂÇÑ´Ù
+	*	@brief	ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½, ResultTypeï¿½ï¿½ï¿½ï¿½ ï¿½Ì·ï¿½ï¿½ï¿½ï¿½ Treeï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½
 	*	@pre	None
-	*	@post	°Ë»öÇÑ µ¥ÀÌÅÍµéÀÇ ÀÌ¸§ È­¸é¿¡ Ãâ·Â
+	*	@post	ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ È­ï¿½é¿¡ ï¿½ï¿½ï¿½
 	*/
 	void DisplayAllResult(ResultDisplayMode mode);
 
 	/*
-	*	@brief	ÀÌ¾îÁö´Â ÇÔ¼ö¸¦ ½ÇÇàÇÒÁö¿¡ ´ëÇØ »ç¿ëÀÚ¿¡°Ô ÇÑ ¹ø´õ ¹°¾îº¸´Â ÇÔ¼ö
-	*	@pre	value°¡ tree¿¡ Æ÷ÇÔµÈ ÇÔ¼ö¿©¾ßÇÑ´Ù.
-	*	@post	ÇÔ¼öÀÇ ½ÇÇà
-	*	@param	ÀÌ¾îÁö´Â ÇÔ¼ö¿¡ »ç¿ëµÉ parameter
-	*	@return	»ç¿ëÀÚ°¡ È®ÀÎÇÑ´Ù¸é true, Ãë¼ÒÇÑ´Ù¸é false ¹ÝÈ¯
+	*	@brief	ï¿½Ì¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½îº¸ï¿½ï¿½ ï¿½Ô¼ï¿½
+	*	@pre	valueï¿½ï¿½ treeï¿½ï¿½ ï¿½ï¿½ï¿½Ôµï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+	*	@post	ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	*	@param	ï¿½Ì¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ parameter
+	*	@return	ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ È®ï¿½ï¿½ï¿½Ñ´Ù¸ï¿½ true, ï¿½ï¿½ï¿½ï¿½Ñ´Ù¸ï¿½ false ï¿½ï¿½È¯
 	*/
 	bool StartFunction(TYPE value);
 
 	/*
-	*	@brief	ÇÑ ´Ü°è ¾Æ·¡ÀÇ Tree¿¡ Á¢±ÙÇÏ±â À§ÇÑ ÇÔ¼ö·Î, µ¥ÀÌÅÍÀÇ ÁÖ¼Ú°ªÀ» °¡¸£Å°´Â Æ÷ÀÎÅÍ¸¦ ¹ÝÈ¯ÇÑ´Ù.
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ßÇÑ´Ù.
+	*	@brief	ï¿½ï¿½ ï¿½Ü°ï¿½ ï¿½Æ·ï¿½ï¿½ï¿½ Treeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼Ú°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Ñ´ï¿½.
 	*	@post	None
-	*	@param	ÁÖ¼Ú°ªÀÌ ÇÊ¿äÇÑ µ¥ÀÌÅÍÀÇ ÀÌ¸§À» °¡Áö´Â µ¥ÀÌÅÍ
-	*	@return	µ¥ÀÌÅÍÀÇ ÁÖ¼Ú°ªÀ» °¡¸£Å°´Â Æ÷ÀÎÅÍ
+	*	@param	ï¿½Ö¼Ú°ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	*	@return	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼Ú°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	*/
 	TYPE* GetCurDataPointer(TYPE value);
 
 
 protected:
-	struct Node // Æ®¸®¸¦ ÀÌ·ç´Â Node
+	struct Node // Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½Ì·ï¿½ï¿½ Node
 	{
 		TYPE data;
 		Node *pLeft;
@@ -156,8 +156,8 @@ protected:
 	};
 
 	/*
-	*	@brief	¿ÞÂÊÀ¸·Î È¸ÀüÇÏ°Å³ª ¿À¸¥ÂÊÀ¸·Î È¸Àü½ÃÄÑ Red Black TreeÀÇ Æ¯¼ºÀ» °¡Áö°Ô ÇÑ´Ù.
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
+	*	@brief	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È¸ï¿½ï¿½ï¿½Ï°Å³ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Red Black Treeï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ´ï¿½.
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
 	*	@post	
 	*	@param	
 	*	@return	
@@ -165,114 +165,114 @@ protected:
 	Node *_Rotate(TYPE& key, Node *pivot);
 
 	/*
-	*	@brief	Parameter·Î ÀÔ·ÂµÈ Node°¡ Leaf NodeÀÎÁö ÆÇº°ÇÏ´Â ÇÔ¼ö
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
+	*	@brief	Parameterï¿½ï¿½ ï¿½Ô·Âµï¿½ Nodeï¿½ï¿½ Leaf Nodeï¿½ï¿½ï¿½ï¿½ ï¿½Çºï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
 	*	@post	None
-	*	@return	LeafNodeÀÌ¸é true°ªÀ», NULL NodeÀÌ°Å³ª Leaf Node°¡ ¾Æ´Ò °æ¿ì false ¹ÝÈ¯
+	*	@return	LeafNodeï¿½Ì¸ï¿½ trueï¿½ï¿½ï¿½ï¿½, NULL Nodeï¿½Ì°Å³ï¿½ Leaf Nodeï¿½ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ false ï¿½ï¿½È¯
 	*/
 	bool _IsLeafNode(const Node *p) const;
 
 	/*
-	*	@brief	Parameter·Î ÀÔ·ÂµÈ Node°¡ µÎ°³ÀÇ Black Node¸¦ °¡Áö´ÂÁö ÆÇº°ÇÏ´Â ÇÔ¼ö
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
+	*	@brief	Parameterï¿½ï¿½ ï¿½Ô·Âµï¿½ Nodeï¿½ï¿½ ï¿½Î°ï¿½ï¿½ï¿½ Black Nodeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Çºï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
 	*	@post	None
-	*	@return 2NodeÀÏ °æ¿ì ture, ¾Æ´Ò °æ¿ì false ¹ÝÈ¯
+	*	@return 2Nodeï¿½ï¿½ ï¿½ï¿½ï¿½ ture, ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ false ï¿½ï¿½È¯
 	*/
 	bool _Is2Node(const Node *p) const;
 
 	/*
-	*	@brief	leaf 3-4³ëµå¸¦ »èÁ¦ÇÒ ¶§ÀÇ ´Ù¼¸°¡Áö °æ¿ìÀÇ ¼ö Ã³¸®
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
-	*	@post	key°ª°ú ÀÏÄ¡ÇÏ´Â µ¥ÀÌÅÍ°¡ ÀÖ´Ù¸é »èÁ¦
-	*	@param	»èÁ¦¸¦ ¿øÇÏ´Â keyword°¡ Æ÷ÇÔµÈ TYPE
-	*	@param	delÀÇ parent pointer
-	*	@param	leaf ±ÙÃ³ÀÇ Node pointer
+	*	@brief	leaf 3-4ï¿½ï¿½å¸¦ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ã³ï¿½ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
+	*	@post	keyï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½Ö´Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½
+	*	@param	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½ keywordï¿½ï¿½ ï¿½ï¿½ï¿½Ôµï¿½ TYPE
+	*	@param	delï¿½ï¿½ parent pointer
+	*	@param	leaf ï¿½ï¿½Ã³ï¿½ï¿½ Node pointer
 	*/
 	bool _DelLeafNode(TYPE& key, Node *delp, Node *del);
 
 	/*
-	*	@brief	Red Node°¡ ¿¬¼ÓµÇ¾î ÀÖÀ» °æ¿ì TreeÀÇ ±¸Á¶¸¦ ¹Ù²ãÁÖ´Â ÇÔ¼ö
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
-	*	@post	È¸ÀüÀÌ ¿Ï·áµÇ¾î Red Node°¡ ¿¬¼ÓÇÏ´Â »óÈ²ÀÌ ¹Ù²ï´Ù
-	*	@param	»èÁ¦ÇÒ µ¥ÀÌÅÍÀÇ Grand Parent Pointer
-	*	@param	»èÁ¦ÇÒ µ¥ÀÌÅÍÀÇ Parent Pointer
-	*	@param	»èÁ¦ÇÒ µ¥ÀÌÅÍÀÇ sibling Pointer
-	*	@return	Red Node°¡ ¿¬¼ÓµÇ¾î ÀÖÀ» °æ¿ì true, ¾Æ´Ò °æ¿ì false¸¦ ¹ÝÈ¯
+	*	@brief	Red Nodeï¿½ï¿½ ï¿½ï¿½ï¿½ÓµÇ¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ Treeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½ï¿½Ö´ï¿½ ï¿½Ô¼ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
+	*	@post	È¸ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¾ï¿½ Red Nodeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½È²ï¿½ï¿½ ï¿½Ù²ï¿½ï¿½
+	*	@param	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Grand Parent Pointer
+	*	@param	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Parent Pointer
+	*	@param	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ sibling Pointer
+	*	@return	Red Nodeï¿½ï¿½ ï¿½ï¿½ï¿½ÓµÇ¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ true, ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ falseï¿½ï¿½ ï¿½ï¿½È¯
 	*/
 	bool _RedAsParent(Node *delgp, Node *delp, Node *sib);
 
 	/*
-	*	@brief	³ëµå¸¦ ´ëÃ¼Å°¿Í ¹Ù²Ù¾î ³»ºÎ³ëµåÀÇ »èÁ¦¿¡ ÀÌ¿ëÇÏ´Â ÇÔ¼ö
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
-	*	@post	Del ³ëµå°¡ »èÁ¦µÈ »óÅÂÀÇ Tree
-	*	@param	Del NodeÀÇ grand parent node pointer
-	*	@param	Del NodeÀÇ parent node pointer
-	*	@param	Del NodeÀÇ sibling node pointer
+	*	@brief	ï¿½ï¿½å¸¦ ï¿½ï¿½Ã¼Å°ï¿½ï¿½ ï¿½Ù²Ù¾ï¿½ ï¿½ï¿½ï¿½Î³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
+	*	@post	Del ï¿½ï¿½å°¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Tree
+	*	@param	Del Nodeï¿½ï¿½ grand parent node pointer
+	*	@param	Del Nodeï¿½ï¿½ parent node pointer
+	*	@param	Del Nodeï¿½ï¿½ sibling node pointer
 	*	@return
 	*/
 	TYPE _SwapKey(Node *del);
 
 	/*
-	*	@brief	È¸ÀüÀ» ÅëÇØ color demotionÀ» ÅëÇØ ³ëµå¸¦ ÇüÁ¦·Î ºÎÅÍ ºô·Á¿Í¾ß ÇÏ´Â 4°¡Áö °æ¿ì¸¦ ÇØ°áÇÒ ¶§ »ç¿ëÇÏ´Â ÇÔ¼ö
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
-	*	@post	È¸ÀüÀÌ ¿Ï·áµÇ¾î µ¥ÀÌÅÍ »èÁ¦°¡ °¡´ÉÇÏ°Ô µÈ´Ù
-	*	@param	È¸ÀüÀÌ ÃàÀÌ µÉ, del NodeÀÇ Grand parent Node pointer
-	*	@param	del NodeÀÇ parent Node Pointer
+	*	@brief	È¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ color demotionï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½å¸¦ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¾ï¿½ ï¿½Ï´ï¿½ 4ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ì¸¦ ï¿½Ø°ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
+	*	@post	È¸ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½È´ï¿½
+	*	@param	È¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½, del Nodeï¿½ï¿½ Grand parent Node pointer
+	*	@param	del Nodeï¿½ï¿½ parent Node Pointer
 	*	@param	del Node
-	*	@param	del NodeÀÇ Sibling Node Pointer
-	*	@return	È¸ÀüÀÌ ÀÏ¾î³­ °æ¿ì true, ÀÏ¾î³ªÁö ¾ÊÀº °æ¿ì false¸¦ ¹ÝÈ¯
+	*	@param	del Nodeï¿½ï¿½ Sibling Node Pointer
+	*	@return	È¸ï¿½ï¿½ï¿½ï¿½ ï¿½Ï¾î³­ ï¿½ï¿½ï¿½ true, ï¿½Ï¾î³ªï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ falseï¿½ï¿½ ï¿½ï¿½È¯
 	*/
 	bool _BorrowKey(Node *delgp, Node *delp, Node *del, Node *sib);
 
 	/*
-	*	@brief	Sibling Node°¡ Black Node, SiblingÀÇ µÎ ÀÚ½Äµµ Black NodeÀÏ °æ¿ì color DemotionÀ¸·Î ³ëµå º´ÇÕ
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
-	*	@post	Color DemotionÀ¸·Î ³ëµå º´ÇÕ
-	*	@param	ºñ±³ÇÒ NodeµéÀÇ Parant Node¸¦ °¡¸£Å°´Â Æ÷ÀÎÅÍ
+	*	@brief	Sibling Nodeï¿½ï¿½ Black Node, Siblingï¿½ï¿½ ï¿½ï¿½ ï¿½Ú½Äµï¿½ Black Nodeï¿½ï¿½ ï¿½ï¿½ï¿½ color Demotionï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
+	*	@post	Color Demotionï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	*	@param	ï¿½ï¿½ï¿½ï¿½ Nodeï¿½ï¿½ï¿½ï¿½ Parant Nodeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	*/
 	void _BindNode(Node *delp);
 
 	/*
-	*	@brief	ÆÄ¶ó¹ÌÅÍ·Î ÀÔ·ÂµÈ NodeºÎÅÍ ¾Æ·¡ÀÇ Sub Tree¸¦ »èÁ¦ÇÏ´Â ÇÔ¼ö
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
-	*	@post	½ÃÀÛÁ¡ ¾Æ·¡ÀÇ µ¥ÀÌÅÍµé »èÁ¦
-	*	@param	»èÁ¦ÀÇ ½ÃÀÛÁ¡ÀÌ µÇ´Â NodeÀÇ Æ÷ÀÎÅÍ
+	*	@brief	ï¿½Ä¶ï¿½ï¿½ï¿½Í·ï¿½ ï¿½Ô·Âµï¿½ Nodeï¿½ï¿½ï¿½ï¿½ ï¿½Æ·ï¿½ï¿½ï¿½ Sub Treeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
+	*	@post	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ ï¿½ï¿½ï¿½ï¿½
+	*	@param	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç´ï¿½ Nodeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	*/
 	void RemoveSubtree(Node *pNode);
 
 	/*
-	*	@brief	ÆÄ¶ó¹ÌÅÍ·Î ÀÔ·ÂµÈ Node PointerºÎÅÍ È­¸é¿¡ Ãâ·Â
+	*	@brief	ï¿½Ä¶ï¿½ï¿½ï¿½Í·ï¿½ ï¿½Ô·Âµï¿½ Node Pointerï¿½ï¿½ï¿½ï¿½ È­ï¿½é¿¡ ï¿½ï¿½ï¿½
 	*	@pre	None
-	*	@post	È­¸é¿¡ µ¥ÀÌÅÍ Ãâ·Â
-	*	@param	µ¥ÀÌÅÍ¸¦ Ãâ·ÂÇÒ ½ÃÀÛÁ¡À» °¡¸£Å°´Â Æ÷ÀÎÅÍ
+	*	@post	È­ï¿½é¿¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+	*	@param	ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	*/
 	void _DisplayAllFrom(Node *ptr);
 
 	/*
-	*	@brief	TreeÀÇ µ¥ÀÌÅÍµéÀÇ ÀÌ¸§µéÀ» ¸ðµÎ Ãâ·ÂÇÏ´Â ÇÔ¼ö
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
-	*	@post	È­¸é¿¡ µ¥ÀÌÅÍµéÀÇ ÀÌ¸§µé Ãâ·Â
-	*	@param	µ¥ÀÌÅÍ¸¦ Ãâ·ÂÇÒ ½ÃÀÛÁ¡À» °¡¸£Å°´Â Æ÷ÀÎÅÍ
+	*	@brief	Treeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
+	*	@post	È­ï¿½é¿¡ ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+	*	@param	ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	*/
 	void _DisplayAllName(Node *ptr);
 
 	/*
-	*	@brief	°Ë»ö°á°ú¸¦ Ãâ·ÂÇÏ±â À§ÇÑ ÇÔ¼ö·Î½á, °Ë»öÇÑ °á°úµéÀÇ ¸®½ºÆ®¿¡ ÀÖ´Â µ¥ÀÌÅÍµéÀÇ ÀÌ¸§µéÀ» ¸ðµÎ Ãâ·ÂÇÑ´Ù
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
-	*	@post	È­¸é¿¡ °Ë»ö°á°úµé Ãâ·Â
-	*	@param	°Ë»ö°á°ú¸¦ Ãâ·ÂÇÒ ½ÃÀÛÁ¡À» °¡¸£Å°´Â Æ÷ÀÎÅÍ
+	*	@brief	ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½ï¿½Î½ï¿½, ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
+	*	@post	È­ï¿½é¿¡ ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+	*	@param	ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	*/
 	void _DisplayAllResult(Node *ptr, ResultDisplayMode mode);
 
 	/*
-	*	@brief	TreeÀÇ µ¥ÀÌÅÍµé Áß, »ç¿ëÀÚ°¡ ¿øÇÏ´Â µ¥ÀÌÅÍ¸¦ °Ë»öÇÏ¿© °á°úÆ®¸®¿¡ ÀúÀåÇÏ´Â ÇÔ¼ö
-	*	@pre	Tree°¡ ÃÊ±âÈ­ µÇ¾îÀÖ¾î¾ß ÇÑ´Ù
-	*	@post	°Ë»ö°á°úµéÀÌ ResultTypeÀ¸·Î ÀÌ·ç¾îÁø Tree¿¡ ÀúÀåµÈ´Ù
-	*	@param	°Ë»öÇÒ Å°¿öµå
-	*	@param	°Ë»ö °á°ú¸¦ ÀúÀåÇÒ Tree
-	*	@param	°Ë»öÀ» ½ÃÀÛÇÒ µ¥ÀÌÅÍÀÇ Æ÷ÀÎÅÍ
-	*	@param	°Ë»öÇÏ°í ÀÖ´Â ´Ü°è°¡ ¾îµðÀÎÁö ¾Ë·ÁÁÖ´Â int°ª
-	*	@return	°Ë»öÀÌ ¼º°øÇÏ¿´´Ù¸é 1, ½ÇÆÐÇÏ¿´´Ù¸é 0À» ¹ÝÈ¯
+	*	@brief	Treeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½Ë»ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
+	*	@pre	Treeï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½Ç¾ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½
+	*	@post	ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ResultTypeï¿½ï¿½ï¿½ï¿½ ï¿½Ì·ï¿½ï¿½ï¿½ï¿½ Treeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È´ï¿½
+	*	@param	ï¿½Ë»ï¿½ï¿½ï¿½ Å°ï¿½ï¿½ï¿½ï¿½
+	*	@param	ï¿½Ë»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Tree
+	*	@param	ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	*	@param	ï¿½Ë»ï¿½ï¿½Ï°ï¿½ ï¿½Ö´ï¿½ ï¿½Ü°è°¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë·ï¿½ï¿½Ö´ï¿½ intï¿½ï¿½
+	*	@return	ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½Ù¸ï¿½ 1, ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½Ù¸ï¿½ 0ï¿½ï¿½ ï¿½ï¿½È¯
 	*/
 	int _RetrieveWithKeyword(string searchKeyword, RedBlackTree<ResultType<TYPE>> &resultTree, Node* ptr, int &location);
 
@@ -313,12 +313,28 @@ bool RedBlackTree<TYPE>::Find(TYPE & key)
 	Node *s;
 	s = m_pNodeHead->pLeft;
 	dataString = s->data.GetName();
+	
 	while (s && !(dataString.find(findString) != string::npos))
 	{
-		if (key.CompareByName(s->data) == GREATER)
-			s = s->pRight;
-		else
-			s = s->pLeft;
+		cout << s->data.GetName() << "\n";
+		if (key.CompareByName(s->data) == GREATER){
+			if(s->pRight){
+				s = s->pRight;
+			}
+			else{
+				s = 0;
+				break;
+			}
+		}
+		else{
+			if(s->pLeft){
+				s = s->pLeft;
+			}
+			else{
+				s = 0;
+				break;
+			}
+		}
 		dataString = s->data.GetName();
 	}
 
@@ -341,36 +357,36 @@ int RedBlackTree<TYPE>::RetrieveWithKeyword(string searchKeyword, RedBlackTree<R
 template<class TYPE>
 bool RedBlackTree<TYPE>::Insert(TYPE & value)
 {
-	Node *t; // ÇöÀç ³ëµå
-	Node *p; // tÀÇ parent
-	Node *gp; // pÀÇ parent
-	Node *ggp; // gpÀÇ parent
+	Node *t; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+	Node *p; // tï¿½ï¿½ parent
+	Node *gp; // pï¿½ï¿½ parent
+	Node *ggp; // gpï¿½ï¿½ parent
 
 	ggp = gp = p = (Node*)m_pNodeHead;
 	t = (Node*)m_pNodeHead->pLeft;
 
 	while (t)
 	{
-		if (value.CompareByName(t->data) == EQUAL) // Áßº¹ ¹ß»ý
+		if (value.CompareByName(t->data) == EQUAL) // ï¿½ßºï¿½ ï¿½ß»ï¿½
 			return false;
-		if (t->pLeft && t->pRight && t->pLeft->color && t->pRight->color) // tÀÇ left, right°¡ Á¸ÀçÇÏ°í, µÑÀÇ color°¡ REDÀÏ¶§
+		if (t->pLeft && t->pRight && t->pLeft->color && t->pRight->color) // tï¿½ï¿½ left, rightï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½, ï¿½ï¿½ï¿½ï¿½ colorï¿½ï¿½ REDï¿½Ï¶ï¿½
 		{
-			// color promotion ¹ß»ý
+			// color promotion ï¿½ß»ï¿½
 			t->color = RED;
 			t->pLeft->color = t->pRight->color = BLACK;
-			if (p->color) // ºÎ¸ðÀÇ »ö±òÀÌ RED·Î RED node ¿¬¼Ó ¹ß»ý
+			if (p->color) // ï¿½Î¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ REDï¿½ï¿½ RED node ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½
 			{
-				// Rotate ÇÊ¿ä
+				// Rotate ï¿½Ê¿ï¿½
 				gp->color = RED;
 				if ((value.CompareByName(gp->data) == GREATER) != (value.CompareByName(p->data) == GREATER))
 					p = _Rotate(value, gp); // double-rotation
 				t = _Rotate(value, ggp);
 				t->color = BLACK;
 			}
-			m_pNodeHead->pLeft->color = BLACK; // »Ñ¸®´Â BLACKÀÌ¾î¾ß ÇÑ´Ù
+			m_pNodeHead->pLeft->color = BLACK; // ï¿½Ñ¸ï¿½ï¿½ï¿½ BLACKï¿½Ì¾ï¿½ï¿½ ï¿½Ñ´ï¿½
 		}
 
-		// Æ÷ÀÎÅÍµé ¾Æ·¡·Î ÀÌµ¿
+		// ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ ï¿½Æ·ï¿½ï¿½ï¿½ ï¿½Ìµï¿½
 		ggp = gp;
 		gp = p;
 		p = t;
@@ -379,21 +395,21 @@ bool RedBlackTree<TYPE>::Insert(TYPE & value)
 			t = t->pRight;
 		else
 			t = t->pLeft;
-	} // t°¡ ³¡¿¡ µµ´Þ, »õ·Î¿î ³ëµå°¡ Ãß°¡µÉ ÁØºñ ¿Ï·á
+	} // tï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½å°¡ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½Øºï¿½ ï¿½Ï·ï¿½
 
-	t = new Node; // »õ·Î Ãß°¡µÇ´Â µ¥ÀÌÅÍÀÇ ³ëµå
+	t = new Node; // ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ç´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	t->data = value;
 	t->pLeft = t->pRight = 0;
-	t->color = RED; // µ¥ÀÌÅÍ ¼¼ÆÃ
+	t->color = RED; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-	// µ¥ÀÌÅÍ »ðÀÔ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	if (value.CompareByName(p->data) == GREATER && p != m_pNodeHead)
 		p->pRight = t;
 	else
 		p->pLeft = t;
 	m_nCount++;
 
-	// ºÎ¸ð°¡ »¡°­ÀÌ¶ó¸é È¸Àü ÇÊ¿ä
+	// ï¿½Î¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½ È¸ï¿½ï¿½ ï¿½Ê¿ï¿½
 	if (p->color)
 	{
 		gp->color = RED;
@@ -403,7 +419,7 @@ bool RedBlackTree<TYPE>::Insert(TYPE & value)
 		t->color = BLACK;
 	}
 
-	m_pNodeHead->pLeft->color = BLACK; // »Ñ¸®´Â BLACKÀÌ¾î¾ß ÇÑ´Ù.
+	m_pNodeHead->pLeft->color = BLACK; // ï¿½Ñ¸ï¿½ï¿½ï¿½ BLACKï¿½Ì¾ï¿½ï¿½ ï¿½Ñ´ï¿½.
 	return true;
 
 }
@@ -411,8 +427,8 @@ bool RedBlackTree<TYPE>::Insert(TYPE & value)
 template<class TYPE>
 bool RedBlackTree<TYPE>::Remove(TYPE & key)
 {
-	Node *delgp; // delpÀÇ parent
-	Node *delp; // delÀÇ parent
+	Node *delgp; // delpï¿½ï¿½ parent
+	Node *delp; // delï¿½ï¿½ parent
 	Node *del; // 
 	Node *sib; // 
 	TYPE value = key;
@@ -425,10 +441,10 @@ bool RedBlackTree<TYPE>::Remove(TYPE & key)
 	{
 		if (!del->color)
 		{
-			// delÀÌ BLACKÀÌ¸é Rotation
+			// delï¿½ï¿½ BLACKï¿½Ì¸ï¿½ Rotation
 			if (_RedAsParent(delgp, delp, sib))
 			{
-				// delgp¿Í sibÀÇ À§Ä¡ change, »õ·Î ¼öÁ¤
+				// delgpï¿½ï¿½ sibï¿½ï¿½ ï¿½ï¿½Ä¡ change, ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				delgp = sib;
 				if (del->data.CompareByName(delp->data) == GREATER || del->data.CompareByName(delp->data) == EQUAL)
 					sib = delp->pLeft;
@@ -594,9 +610,9 @@ bool RedBlackTree<TYPE>::_DelLeafNode(TYPE & key, Node * delp, Node * del)
 {
 	if (key.CompareByName(del->data) == EQUAL && !del->pLeft && !del->pRight)
 	{
-		// delÀÌ RED leaf³ª BLACK leafÀÎ °æ¿ì
+		// delï¿½ï¿½ RED leafï¿½ï¿½ BLACK leafï¿½ï¿½ ï¿½ï¿½ï¿½
 		delete del;
-		if ((key.CompareByName(delp->data) == GREATER) || (key.CompareByName(delp->data) == EQUAL) && delp != m_pNodeHead)
+		if (((key.CompareByName(delp->data) == GREATER) || (key.CompareByName(delp->data) == EQUAL)) && delp != m_pNodeHead)
 			delp->pRight = 0;
 		else
 			delp->pLeft = 0;
@@ -604,16 +620,16 @@ bool RedBlackTree<TYPE>::_DelLeafNode(TYPE & key, Node * delp, Node * del)
 	}
 	else if (key.CompareByName(del->data) == EQUAL)
 	{
-		// delÀÇ ÀÚ½ÄÀÌ ÀÖ´Â °æ¿ì.
+		// delï¿½ï¿½ ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½.
 		Node *ret = 0;
-		if (del->pLeft) // ÀÚ½ÄÀÌ left¿¡ ÀÖ´Â °æ¿ì
+		if (del->pLeft) // ï¿½Ú½ï¿½ï¿½ï¿½ leftï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½
 		{
 			del->pLeft->pRight = del->pRight;
 			ret = del->pLeft;
 			ret->color = BLACK;
 			delete del;
 		}
-		else if (del->pRight) // ÀÚ½ÄÀÌ right¿¡ ÀÖ´Â °æ¿ì
+		else if (del->pRight) // ï¿½Ú½ï¿½ï¿½ï¿½ rightï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½
 		{
 			del->pRight->pLeft = del->pLeft;
 			ret = del->pRight;
@@ -621,7 +637,7 @@ bool RedBlackTree<TYPE>::_DelLeafNode(TYPE & key, Node * delp, Node * del)
 			delete del;
 		}
 
-		if ((ret->data.CompareByName(delp->data) == GREATER) || (ret->data.CompareByName(delp->data) == EQUAL) && delp != m_pNodeHead)
+		if (((ret->data.CompareByName(delp->data) == GREATER) || (ret->data.CompareByName(delp->data) == EQUAL)) && delp != m_pNodeHead)
 			delp->pRight = ret;
 		else
 			delp->pLeft = ret;
@@ -630,14 +646,14 @@ bool RedBlackTree<TYPE>::_DelLeafNode(TYPE & key, Node * delp, Node * del)
 	}
 	else if (del->pLeft && key.CompareByName(del->pLeft->data) == EQUAL)
 	{
-		// key¿Í ÀÏÄ¡ÇÏ´Â µ¥ÀÌÅÍ°¡ delÀÇ Left childÀÎ °æ¿ì
+		// keyï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ delï¿½ï¿½ Left childï¿½ï¿½ ï¿½ï¿½ï¿½
 		delete del->pLeft;
 		del->pLeft = 0;
 		return true;
 	}
 	else if (del->pRight && key.CompareByName(del->pRight->data) == EQUAL)
 	{
-		// key¿Í ÀÏÄ¡ÇÏ´Â µ¥ÀÌÅÍ°¡ delÀÇ right childÀÎ °æ¿ì
+		// keyï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ delï¿½ï¿½ right childï¿½ï¿½ ï¿½ï¿½ï¿½
 		delete del->pRight;
 		del->pRight = 0;
 		return true;
