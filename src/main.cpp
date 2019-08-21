@@ -6,6 +6,7 @@
 int main()
 {
 	Application app;	// Program application
+	system("clear");
 	app.Run();			// run program
 
 	return 0;

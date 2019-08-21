@@ -109,9 +109,9 @@ public:
 	void PaperManagementMode();
 
 	/*
-	*	@brief	파일로 부터 데이터를 불러와서 Tree에 저장한다
-	*	@pre	파일의 데이터 형식을 잘 판별하여 Tree에 저장할 수 있도록 텍스트 파일에 데이터가 일관 되게 저장되어있어야 한다
-	*	@post	Tree에 데이터 저장
+	*	@brief	Save data file to tree
+	*	@pre	Data in file should be formalized.
+	*	@post	Tree will be filled with data.
 	*/
 	void FileIn();
 

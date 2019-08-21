@@ -1,4 +1,4 @@
-#include "Application.h"
+#include "../include/Application.h"
 
 int Application::GetCommand(ModeNum modeNum)
 {
@@ -69,26 +69,26 @@ void Application::Run()
 		switch (m_Command)
 		{
 		case 1: // User Mode
-			system("cls");
+			system("clear");
 			UserMode();
 			break;
 		case 2: // Management Mode
-			system("cls");
+			system("clear");
 			ManageMode();
 			break;
-		case 3: // 파일로 부터 불러오기
+		case 3: // Save data file to tree
 			FileIn();
 			break;
 		case 0:	// program exit
-			system("cls");
-			cout << "\n\n	Shut down the Program";
-			Sleep(1000);
-			exit(400);
+			system("clear");
+			cout << "\n\n	Shut down the Program\n\n";
+			sleep(2);
+			exit(1);
 		default: // force program termination
-			system("cls");
-			cout << "\n\n\t  ** ERROR : Illegal selection. Shut down the Program";
-			Sleep(1000);
-			exit(400);
+			system("clear");
+			cout << "\n\n\t  ** ERROR : Illegal selection. Shut down the Program\n\n";
+			sleep(2);
+			break;
 		}
 
 	}
@@ -105,20 +105,20 @@ void Application::UserMode()
 		switch (m_Command)
 		{
 		case 1: // display all conference name
-			system("cls");
+			system("clear");
 			DisplayAllConference();
 			break;
 		case 2: // retrieve by name and if user choose one, display detail inforamtion
 			RetrieveByName();
 			break;
 		case 0: // go back
-			system("cls");
+			system("clear");
 			goback = true;
 			break;
 		default: // force program termination
-			system("cls");
+			system("clear");
 			cout << "\n\n\t  ** ERROR : Illegal selection. Shut down the Program";
-			Sleep(1000);
+			sleep(2);
 			exit(400);
 		}
 
@@ -136,7 +136,7 @@ void Application::ManageMode()
 		switch (m_Command)
 		{
 		case 1: // display all of conference information
-			system("cls");
+			system("clear");
 			DisplayAllConference();
 			break;
 		case 2: // add a conference
@@ -152,13 +152,13 @@ void Application::ManageMode()
 			PaperManagementMode();
 			break;
 		case 0: // go back
-			system("cls");
+			system("clear");
 			goback = true;
 			break;
 		default: // force program termination
-			system("cls");
+			system("clear");
 			cout << "\n\n\t  ** ERROR : Illegal selection. Shut down the Program";
-			Sleep(1000);
+			sleep(2);
 			exit(400);
 		}
 
@@ -169,8 +169,7 @@ void Application::DisplayAllConference()
 {
 	if (m_List.GetCount())
 	{
-		system("cls");
-		// list의 모든 데이터를 화면에 출력
+		system("clear");
 		cout << "\n\t-- Current list ----------------------------\n\n";
 		m_List.DisplayAllRecord();
 		cout << "\t--------------------------------------------" << endl;
@@ -181,7 +180,7 @@ void Application::DisplayAllResult(ResultDisplayMode mode)
 {
 	if (mode == CONFERENCE)
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\n\t  [Search Result]" << endl;
 
 		cout << "\t  >> Conference" << endl;
@@ -204,13 +203,13 @@ void Application::AddConference()
 	bool process = m_List.Insert(item);
 	if (process) // add success
 	{
-		system("cls");
+		system("clear");
 		DisplayAllConference();
 		return;
 	}
 	else
 	{
-		system("cls");
+		system("clear");
 		cout << endl << "\t  ** ERROR : Can not Add conference." << endl;
 		return;
 	}
@@ -226,7 +225,7 @@ void Application::DeleteConference()
 	getline(cin, deleteDataName);
 
 	tempData.SetName(deleteDataName);
-	system("cls");
+	system("clear");
 	bool process = m_List.Find(tempData);
 	
 	if (process)
@@ -236,26 +235,26 @@ void Application::DeleteConference()
 		if (startOrNot)
 		{
 			m_List.Remove(tempData);
-			system("cls");
+			system("clear");
 			DisplayAllConference();
 		}
 		else
 		{
-			system("cls");
+			system("clear");
 			cout << "\n\t  ** Cancel Delete." << endl;
 			DisplayAllConference();
 		}
 	}
 	else if (!process)
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t  ** ERROR : Can not found." << endl;
 	}
 	else
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t ** ERROR : Unexpected Error occurred. Exit Program." << endl;
-		Sleep(1000);
+		sleep(2);
 		exit(400);
 	}
 
@@ -271,7 +270,7 @@ void Application::ReplaceConference()
 	getline(cin, replaceDataName);
 
 	tempData.SetName(replaceDataName);
-	system("cls");
+	system("clear");
 	bool process = m_List.Find(tempData);
 
 	if (process) // replace success
@@ -285,21 +284,21 @@ void Application::ReplaceConference()
 		}
 		else
 		{
-			system("cls");
+			system("clear");
 			cout << "\n\t  ** Cancel Replace." << endl;
 			DisplayAllConference();
 		}
 	}
 	else if (!process) // can not found
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t  ** ERROR : Can not found." << endl;
 	}
 	else
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t ** ERROR : Unexpected Error occurred. Exit Program." << endl;
-		Sleep(1000);
+		sleep(2);
 		exit(400);
 	}
 }
@@ -335,33 +334,33 @@ void Application::PaperManagementMode()
 	if (process) // retrieve success
 	{
 		ConferenceType *Pointer = m_List.GetCurDataPointer(tempData);
-		system("cls");
+		system("clear");
 		Pointer->PaperManagement(); // start conference management mode
 	}
 	else if (!process) // can not found
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t  ** ERROR : Can not found." << endl;
 	}
 	else
 	{
-		system("cls");
+		system("clear");
 		cout << "\n\t ** ERROR : Unexpected Error occurred. Exit Program." << endl;
-		Sleep(1000);
+		sleep(2);
 		exit(400);
 	}
 }
 
 void Application::FileIn()
 {
-	system("cls");
+	system("clear");
 	cout << "\n\t  >> Load data from File" << endl << endl;
 
 	char dataType;
 	string space;
 
 	ifstream read;
-	read.open("dblp.txt");
+	read.open("data/dblp.txt");
 	
 	if (read.fail()) 
 	{
@@ -370,9 +369,9 @@ void Application::FileIn()
 	}
 
 	read.get(dataType);
+	read.get(dataType);
 	while (!read.eof())
 	{
-		read.get(dataType);
 		if (dataType == 'c')
 		{
 			read.get(dataType);
@@ -382,13 +381,14 @@ void Application::FileIn()
 			getline(read, tempName, '\t');
 			string tempDate;
 			getline(read, tempDate, '\t');
+			sleep(1);
 			temp.SetRecord(tempName, tempDate);
 
 			m_List.Insert(temp);
 			cout << "\t  >> Add Conference Complete." << temp.GetName() << ", " <<temp.GetDateTime() << endl;
 
 			read.get(dataType);
-			while (dataType != 'c')
+			while (dataType != 'c' && !read.eof())
 			{
 				if (dataType == 'p')
 				{
