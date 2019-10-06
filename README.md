@@ -1,5 +1,7 @@
 # Conference Information Management Program
 
+[![Build Status](https://travis-ci.org/Gaejuk2/DataStructure_RedBlackTree.svg?branch=master)](https://travis-ci.org/Gaejuk2/DataStructure_RedBlackTree)
+
 ## Overview
 
 __Conference Information Management Program__ 은 데이터의 추가, 삭제보다는 데이터의 검색 횟수가 더 많을 것으로 예측하여, 데이터의 검색이 매우 빠른 __Red Black Tree__ 를 자료구조로 선택하였다. 이 Red Black Tree의 원리를 이해하고 이를 __C++__ 로 직접 구현하여 사용하였다.
